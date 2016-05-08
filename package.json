@@ -1,0 +1,25 @@
+{
+  "name": "gulp-postcss-tutorial",
+  "version": "0.0.1",
+  "description": "Using PostCSS with Gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.1.1",
+    "pixrem": "^3.0.0",
+    "postcss-color-rgba-fallback": "^2.2.0",
+    "postcss-cssnext": "^2.5.2",
+    "postcss-opacity": "^3.0.0",
+    "postcss-pseudoelements": "^3.0.0",
+    "postcss-vmin": "^2.0.0",
+    "postcss-will-change": "^1.1.0",
+    "precss": "^1.4.0"
+  }
+}

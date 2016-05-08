@@ -1,0 +1,57 @@
+/* Testing postcss-cssnext */
+
+@keyframes animationExample {
+  from {
+    width: 0
+  }
+  to {
+    width: 100%
+  }
+}
+
+.animateThis {
+  animation: animationExample 2s;
+  display: flex
+}
+
+/* Testing postcss-this-will-change */
+
+.thisWillChange {
+  will-change: transform
+}
+
+/* Testing rgbaFallback for IE 8 */
+
+.rgbaFallback {
+  background: rgba(0,0,0,0.5)
+}
+
+/* Testing postcss-opacity */
+
+.opacityFallback {
+  opacity: 0.5
+}
+
+/* Testing postcss-pseudoelements */
+
+.pseudo-element::before {
+  content: ''
+}
+
+/* Testing postcss-vmin */
+
+.vmFallback {
+  width: 50vmin
+}
+
+/* Testing node-pixrem */
+
+.remFallback {
+  height: 10rem;
+  font: 2rem Arial
+}
+
+.remFallback::before {
+  content: '';
+  line-height: 1rem
+}
