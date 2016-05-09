@@ -9,12 +9,21 @@ var pseudoelements = require('postcss-pseudoelements')
 var vmin = require('postcss-vmin')
 var pixrem = require('pixrem')
 var will_change = require('postcss-will-change')
+var atImport = require('postcss-import')
+var mqpacker = require('css-mqpacker')
+var cssnano = require('cssnano')
 
 gulp.task('css', function() {
   var processors = [
+    atImport,
+    mqpacker,
+    cssnano({
+      minifyFontWeight: false,
+      calc: { precision: 2 }
+    }),
     precss,
     will_change,
-    cssnext({browsers: ['last 2 version']}),
+    cssnext({ browsers: ['last 2 version'] }),
     color_rgba_fallback,
     opacity,
     pseudoelements,
