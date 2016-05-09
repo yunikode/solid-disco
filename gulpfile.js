@@ -15,20 +15,20 @@ var cssnano = require('cssnano')
 
 gulp.task('css', function() {
   var processors = [
-    atImport,
-    mqpacker,
-    cssnano({
-      minifyFontWeight: false,
-      calc: { precision: 2 }
-    }),
+    //atImport,
     precss,
-    will_change,
-    cssnext({ browsers: ['last 2 version'] }),
-    color_rgba_fallback,
-    opacity,
-    pseudoelements,
-    vmin,
-    pixrem
+    //mqpacker,
+    /*cssnano({
+      minifyFontValues: false,
+      calc: { precision: 2 }
+    }), */
+    //will_change,
+    //cssnext({ browsers: ['last 2 version'] }),
+    //color_rgba_fallback,
+    //opacity,
+    //pseudoelements,
+    //vmin,
+    //pixrem
   ]
   return gulp.src('./src/*.css')
     .pipe(postcss(processors))
